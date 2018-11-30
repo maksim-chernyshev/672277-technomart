@@ -15,9 +15,11 @@
                     <img src="img/header-logo.png" width="220" height="47" alt="Логотип «Техномарт»" title="Техномарт">
                     Техномарт
                 </a>
-                <!--ПОИСК в абзац завернул временно чтобы лучше смотрелось на странице-->
-                <p>Поиск:</p>
-                <!--    здесь будет форма поиска по сайту      -->
+                <form class="search-form" action="#" method="get">
+                    <label for="search">Поиск:</label>
+                    <input type="search" id="search" name="search">
+              </form>
+
             </div>
             <div class="top-header-right">
                 <a class="bookmarks" href="#">Закладки:0</a>
@@ -73,7 +75,6 @@
                 </p>
                 <p>
                     Мы можем доставить ваш товар в самые отдаленные точки России!
-                    <br>
                     Техномарт работает со многими транспортными компаниями:
                 </p>
                 <ul class="delivery-services">
@@ -143,7 +144,7 @@
             </div>
             <div class="bottom-footer-right">
                 <p>
-                    Обратная связь:<br>
+                    Обратная связь:
                     <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
                 <p>
@@ -157,8 +158,10 @@
     </footer>
 
     <section class="modal modal-feedback">
+      <button class="modal-close">Закрыть</button>
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="feedback" action="#" method="post">
+          <div class="user-contacts">
             <p>
                 <label>
                     Ваше имя:
@@ -171,20 +174,23 @@
                     <input type="text" name="email" placeholder="email@example.com">
                 </label>
             </p>
+          </div>
             <p>
                 <label>
-                    Текст письма:<br>
+                    Текст письма:
                     <textarea placeholder="В свободной форме"></textarea>
                 </label>
             </p>
-            <button class="button" type="submit">Отправить</button>
+            <div class="feedback-bottom">
+                <button class="button" type="submit">Отправить</button>
+            </div>
         </form>
-        <button class="modal-close">Закрыть</button>
     </section>
+
     <section class="modal modal-map">
+      <button class="modal-close">Закрыть</button>
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу улица Большая Конюшенная дом 19/8, Санкт-Петербург">
-        <button class="modal-close">Закрыть</button>
     </section>
 
 </body>
