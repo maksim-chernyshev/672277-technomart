@@ -221,3 +221,128 @@ a {
 .modal {
     display: none;
 }
+
+
+/* Каталог */
+
+.top-header-right .cart {
+    background-color: #ee3643;
+}
+
+.user-profile {
+    background-color: #ffffff;
+}
+
+.user-profile-menu a {
+    color: #32425c;
+
+    font-size: 16px;
+    line-height: 18px;
+
+    text-decoration: underline;
+
+    background-color: #f2f6f8;
+}
+
+.breadcrumbs li {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+}
+
+.catalog-section {
+    color: #32425c;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+
+    text-transform: uppercase;
+
+    background-color: #f2f6f8;
+}
+
+.filter {
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.filter h2 {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+
+    background-color: #f7f3ec;
+}
+
+.filter-form fieldset {
+    border: none;
+}
+
+.filter-form legend {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+
+}
+
+.filter-brands label,
+.filter-power label {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+button[type="submit"] {
+    font-size: 13px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-list {
+    list-style: none;
+
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+}
+
+.catalog-item {
+    border: 1px solid #e5e5e5;
+}
+
+.catalog-item img {
+    background-color: #ffffff;
+}
+
+.catalog-item p:first-of-type {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.catalog-item p:nth-of-type(2) {
+    color: #999999;
+
+    font-size: 17px;
+    line-height: 18px;
+
+    text-decoration: line-through;
+}
+
+.buying-button {
+    color: #ffffff;
+
+    font-size: 17px;
+    line-height: 18px;
+
+    background-color: #ee3643;
+}
