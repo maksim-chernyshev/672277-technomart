@@ -1,0 +1,223 @@
+/* font-family: 'Cuprum', sans-serif;
+font-family: 'PT Sans', sans-serif; */
+
+body {
+    font-family: "Cuprum", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top-header {
+    color: #ffffff;
+
+    font-size: 17px;
+    line-height: 18px;
+
+    background-color: #293449;
+}
+
+.top-header-right a{
+    color: #ffffff;
+}
+
+.order-button {
+    background-color: #63a63e;
+}
+
+.main-header {
+    background-color: #f4f7f9;
+}
+
+.main-title {
+    color: #ee3643;
+
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+
+    text-align: left;
+
+}
+
+.main-header-center {
+    text-align: center;
+}
+
+.tel-number {
+    color: #ee3643;
+
+    font-size: 21px;
+    line-height: 21px;
+
+    border: 3px solid #ffffff;
+}
+
+.main-header-center .adress {
+    color: #32425c;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.main-header-right ul {
+    list-style: none;
+}
+
+.main-header-right a {
+    color: #000000;
+
+    font-size: 21px;
+    line-height: 21px;
+
+    background-color: #ffffff;
+}
+
+.main-navigation {
+    background-color: #32425c;
+    box-shadow: 0 5px 0 0 #293449;
+}
+
+.main-navigation ul {
+    list-style: none;
+}
+
+.site-navigation-item a {
+    color: #ffffff;
+
+    font-size: 17px;
+    line-height: 17px;
+
+}
+
+/* Main Content */
+
+.about-left h2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.about-left p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+    /*      Нужно ли здесь убирать маркеры? Не понимаю */
+/* .delivery-services { */
+    /* list-style: none; */
+}
+
+.delivery-services li {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.about-left a {
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+}
+
+.contacts h2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+
+    text-transform: uppercase;
+}
+
+.contacts p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.contacts a {
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+}
+
+/* Footer */
+
+.main-footer {
+    background-color: #32425c;
+}
+
+.main-footer-left p {
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.main-footer-right ul {
+    list-style: none;
+}
+
+.site-sections a {
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.product-categories a {
+    color: #ffd180;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.bottom-footer {
+    background-color: #293449;
+}
+
+.bottom-footer-left p {
+    color: #ffffff;
+
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.bottom-footer-center ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+.bottom-footer-right {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.bottom-footer-right span {
+    color: #ffffff;
+}
+
+.bottom-footer-right a {
+    color: #ffd180;
+}
+
+/* Модальные окна, которые на этом этапе стилизовать не нужно */
+
+.modal {
+    display: none;
+}
