@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nomalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +14,7 @@
             <div class="top-header-left">
                 <a class="header-logo" href="index.html">
                     <img src="img/header-logo.png" width="220" height="47" alt="Логотип «Техномарт»" title="Техномарт">
-                    Техномарт
+                    <span class="visually-hidden">Техномарт</span>
                 </a>
                 <form class="search-form" action="#" method="get">
                     <label for="search">Поиск:</label>
@@ -44,7 +46,7 @@
                     </p>
                     <a class="exit-profile" href="#">Выход</a>
                 </div>
-                <ul>
+                <ul class="user-profile-menu">
                     <li><a href="#">Мои заказы</a></li>
                     <li><a href="#">Личный кабинет</a></li>
                 </ul>
@@ -71,7 +73,7 @@
             <li><a href="#">Инструменты</a></li>
             <li><a>Перфораторы</a></li>
         </ul>
-        <h1>Перфораторы</h1>
+        <h1 class="catalog-section">Перфораторы</h1>
         <div class="catalog-columns">
             <section class="filter">
                 <h2>Фильтр:</h2>
@@ -82,7 +84,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Производители</legend>
-                        <ul>
+                        <ul class="filter-brands">
                             <li>
                                 <input type="checkbox" name="Bosch" id="Bosch" checked>
                                 <label for="Bosch">Bosch</label>
@@ -107,7 +109,7 @@
                     </fieldset>
                     <fieldset>
                         <legend>Питание</legend>
-                        <ul>
+                        <ul class="filter-power">
                             <li>
                                 <input type="radio" name="power-supply" value="battery" id="battery" checked>
                                 <label for="battery">Аккумуляторные</label>
@@ -247,11 +249,11 @@
             </div>
             <div class="bottom-footer-right">
                 <p>
-                    Обратная связь:<br>
+                    <span>Обратная связь:</span>
                     <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>
                 <p>
-                    Разработано -
+                    <span>Разработано -</span>
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                         htmlacademy.ru
                     </a>
