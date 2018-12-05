@@ -26,6 +26,37 @@ a {
     background-color: #63a63e;
 }
 
+label[for="search"]:hover,
+input[type="search"]:hover,
+.bookmarks:hover,
+.cart:hover {
+    background-color: #212a3a;
+}
+
+.bookmarks:active,
+.cart:active {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: #161d29;
+}
+
+.order-button:hover {
+    background-color: #5fbb2d;
+}
+
+.order-button:active {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: #518534;
+}
+
+label[for="search"]:focus,
+input[type="search"]:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
 .main-header {
     background-color: #f4f7f9;
 }
@@ -74,6 +105,14 @@ a {
     background-color: #ffffff;
 }
 
+.main-header-right .button:hover {
+    color: #ee3643;
+}
+
+.main-header-right .button:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .main-navigation {
     background-color: #32425c;
     box-shadow: 0 5px 0 0 #293449;
@@ -88,7 +127,16 @@ a {
 
     font-size: 17px;
     line-height: 17px;
+}
 
+.site-navigation-item:hover {
+    background-color: #293449;
+}
+
+.site-navigation-item a:active {
+    color: rgba(255, 255, 255, 0.5);
+
+    background-color: #1d2739;
 }
 
 /* Main Content */
@@ -127,6 +175,14 @@ a {
     background-color: #ee3643;
 }
 
+.about-left a:hover {
+    background-color: #ca2c37;
+}
+
+.about-left a:active {
+    background-color: #ba2732;
+}
+
 .contacts h2 {
     font-size: 30px;
     font-weight: normal;
@@ -152,6 +208,13 @@ a {
     background-color: #ee3643;
 }
 
+.contacts a:hover {
+    background-color: #ca2c37;
+}
+
+.contacts a:active {
+    background-color: #ba2732;
+}
 /* Footer */
 
 .main-footer {
@@ -159,7 +222,7 @@ a {
 }
 
 .main-footer-left p {
-    color: #ffffff;
+    color: #f1f5f7;
 
     font-size: 18px;
     line-height: 24px;
@@ -170,10 +233,18 @@ a {
 }
 
 .site-sections a {
-    color: #ffffff;
+    color: #f1f5f7;
 
     font-size: 18px;
     line-height: 24px;
+}
+
+.site-sections a:hover {
+    text-decoration: underline;
+}
+
+.site-sections a:active {
+    color: rgba(241, 245, 247, 0.5);
 }
 
 .product-categories a {
@@ -181,6 +252,14 @@ a {
 
     font-size: 18px;
     line-height: 24px;
+}
+
+.product-categories a:hover {
+    text-decoration: underline;
+}
+
+.product-categories a:active {
+    color: rgba(255, 209, 128, 0.5);
 }
 
 .bottom-footer {
@@ -215,6 +294,14 @@ a {
     color: #ffd180;
 }
 
+.bottom-footer-right a:hover {
+    text-decoration: underline;
+}
+
+.bottom-footer-right a:active {
+    color: #ee3643;
+}
+
 /* Модальные окна, которые на этом этапе стилизовать не нужно */
 
 .modal {
@@ -224,12 +311,16 @@ a {
 
 /* Каталог */
 
-.top-header-right .cart {
+.top-header-right .cart-full {
     background-color: #ee3643;
 }
 
 .user-profile {
     background-color: #ffffff;
+}
+
+.user-profile a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .user-profile-menu a {
@@ -241,6 +332,14 @@ a {
     text-decoration: underline;
 
     background-color: #f2f6f8;
+}
+
+.user-profile-menu a:hover {
+    color: #ee3643;
+}
+
+.user-profile-menu a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .breadcrumbs li {
@@ -290,13 +389,20 @@ a {
     font-size: 17px;
     font-weight: bold;
     line-height: 30px;
+}
 
+.filter-form ul {
+    list-style: none;
 }
 
 .filter-brands label,
 .filter-power label {
     font-size: 15px;
     line-height: 20px;
+}
+
+.filter-input:disabled + label {
+    color: rgba(0, 0, 0, 0.4);
 }
 
 button[type="submit"] {
@@ -321,6 +427,13 @@ button[type="submit"] {
 
 .catalog-item img {
     background-color: #ffffff;
+}
+
+/* с тенями у карточек товаров полная беда */
+.catalog-item:hover {
+    border: none;
+
+    box-shadow: 10px 0 0 25px rgba(41, 52,73, 0.5);
 }
 
 .catalog-item p:first-of-type {
