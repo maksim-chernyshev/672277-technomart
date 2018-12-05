@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/nomalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -19,7 +19,7 @@
                 </a>
                 <form class="search-form" action="#" method="get">
                     <label for="search"><span class="visually-hidden">Поиск:</span></label>
-                    <input type="search" id="search" name="search">
+                    <input type="search" id="search" name="search" placeholder="Поиск:">
               </form>
             </div>
             <div class="top-header-right">
@@ -87,23 +87,23 @@
                     <legend>Производители</legend>
                         <ul class="filter-brands">
                             <li>
-                                <input type="checkbox" name="Bosch" id="Bosch" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
                                 <label for="Bosch">Bosch</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="Bosch" id="interskol">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interskol" id="interskol">
                                 <label for="interskol">Интерскол</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="Bosch" id="makita" checked>
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="makita" checked>
                                 <label for="makita">Makita</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="Bosch" id="dewalt">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="dewalt" disabled>
                                 <label for="dewalt">Dewalt</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="Bosch" id="hitachi">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="hitachi">
                                 <label for="hitachi">Hitachi</label>
                             </li>
                         </ul>
@@ -112,11 +112,11 @@
                         <legend>Питание</legend>
                         <ul class="filter-power">
                             <li>
-                                <input type="radio" name="power-supply" value="battery" id="battery" checked>
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="battery" id="battery" checked>
                                 <label for="battery">Аккумуляторные</label>
                             </li>
                             <li>
-                                <input type="radio" name="power-supply" value="socket" id="socket">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="socket" id="socket">
                                 <label for="socket">Сетевые</label>
                             </li>
                         </ul>
