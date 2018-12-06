@@ -2,7 +2,7 @@
 font-family: 'PT Sans', sans-serif; */
 
 body {
-    font-family: "Cuprum", sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
 }
 
 a {
@@ -161,7 +161,7 @@ a {
 }
 
 .about-left p {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -203,7 +203,7 @@ a {
 }
 
 .contacts p {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -360,7 +360,7 @@ a {
 .breadcrumbs a {
     color: #000000;
 
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 18px;
 
@@ -380,7 +380,7 @@ a {
 }
 
 .filter {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
@@ -428,11 +428,13 @@ a {
 .catalog-list {
     list-style: none;
 
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
 }
 
 .catalog-item {
+    position: relative;
+
     border: 1px solid #e5e5e5;
 }
 
@@ -440,11 +442,68 @@ a {
     background-color: #ffffff;
 }
 
-/* с тенями у карточек товаров полная беда */
+.chosen-product {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+
+    background-color: #ffffff;
+}
+
+.catalog-item:hover .chosen-product {
+    display: block;
+}
+
+.chosen-product .buy-button {
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    background-color: #63a63e;
+
+    box-shadow: 0 3px 0 0 #367315;
+}
+
+.chosen-product .buy-button:hover {
+    background-color: #5fbb2d;
+}
+
+.chosen-product .buy-button:active {
+    background-color: #518534;
+
+    box-shadow: none;
+}
+
+.chosen-product .bookmark-button {
+    color: #32425c;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    border: 3px solid #63a63e;
+}
+
+.chosen-product .bookmark-button:hover {
+    border: 3px solid #32425c;
+}
+
+.chosen-product .bookmark-button:active {
+    color: rgba(50, 66, 92, 0.3);
+
+    border: 3px solid rgba(50, 66, 92, 0.3);
+}
+
 .catalog-item:hover {
     border: none;
 
-    box-shadow: 10px 0 25px 0 rgba(41, 52,73, 0.5);
+    box-shadow: 0px 10px 25px 0 rgba(41, 52,73, 0.5);
 }
 
 .catalog-item p:first-of-type {
@@ -452,7 +511,7 @@ a {
     line-height: 20px;
 }
 
-.catalog-item p:nth-of-type(2) {
+.catalog-item .sale {
     color: #999999;
 
     font-size: 17px;
@@ -461,7 +520,7 @@ a {
     text-decoration: line-through;
 }
 
-.buying-button {
+.actual-price {
     color: #ffffff;
 
     font-size: 17px;
