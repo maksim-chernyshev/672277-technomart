@@ -26,8 +26,21 @@ a {
     background-color: #63a63e;
 }
 
-label[for="search"]:hover,
-input[type="search"]:hover,
+.search-area {
+    border: none;
+
+    background-color: #293449;
+}
+
+.search-area::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.search-area::-moz-input-placeholder {
+    color: #ffffff;
+}
+
+.search-area:hover,
 .bookmarks:hover,
 .cart:hover {
     background-color: #212a3a;
@@ -50,8 +63,7 @@ input[type="search"]:hover,
     background-color: #518534;
 }
 
-label[for="search"]:focus,
-input[type="search"]:focus {
+.search-area:focus {
     color: #000000;
 
     background-color: #ffffff;
@@ -69,7 +81,6 @@ input[type="search"]:focus {
     line-height: 23px;
 
     text-align: left;
-
 }
 
 .main-header-center {
@@ -405,7 +416,7 @@ input[type="search"]:focus {
     color: rgba(0, 0, 0, 0.4);
 }
 
-button[type="submit"] {
+.filter-show-button {
     font-size: 13px;
     line-height: 18px;
 
