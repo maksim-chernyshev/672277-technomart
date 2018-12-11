@@ -167,8 +167,10 @@ a {
 }
 
     /*      Нужно ли здесь убирать маркеры? Не понимаю */
-/* .delivery-services { */
-    /* list-style: none; */
+
+.delivery-services {
+    list-style: none;
+}
 
 .delivery-services li {
     font-size: 18px;
@@ -527,4 +529,285 @@ a {
     line-height: 18px;
 
     background-color: #ee3643;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!ЗДЕСЬ БУДУТ СТИЛИ СЕТКИ!!!!!!!!!!!!!!!!!!!! */
+
+
+body {
+    width: 1200px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.top-header-layout {
+    width: 1200px;
+    height: 42px;
+
+    background-color: #293449;
+}
+
+.top-header {
+    display: flex;
+}
+
+/* НЕ ПОЛУЧАЕТСЯ ЗДЕСЬ ЭЛЕМЕНТЫ ВЕРХНЕЙ ШАПКИ ВЫРОВНЯТЬ ПО ЦЕНТРУ, В ЧЕМ ПРИЧИНА? */
+
+.top-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    width: 270px;
+}
+
+.top-header-right {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+.bookmarks {
+    width: 140px;
+}
+
+.cart {
+    width: 140px;
+}
+
+.order-button {
+    width: 150px;
+}
+
+.main-header-layout {
+    padding-bottom: 60px;
+
+    background-color: #f4f7f9;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+
+    padding-top: 46px;
+    margin-bottom: 45px;
+}
+
+.main-title {
+    width: 200px;
+
+    margin: 0;
+    padding: 0;
+
+    margin-left: 52px;
+}
+
+.main-header-center p {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 10px;
+}
+
+.main-header-center {
+    width: 270px;
+}
+
+.tel-number {
+    width :270px;
+
+    text-align: center;
+}
+
+.main-header-right ul{
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.login-link {
+    width: 120px;
+
+    text-align: center;
+}
+
+.registration-link {
+    width: 150px;
+
+    text-align: center;
+
+    margin-left: 10px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+
+    margin: 0;
+    padding: 0;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    margin-bottom: 86px;
+}
+
+.about-left {
+    width: 540px;
+}
+
+.about-left h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 25px;
+}
+
+.about-left p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-left p:first-of-type {
+    margin-bottom: 35px;
+}
+
+.delivery-services {
+    margin-bottom: 40px;
+}
+
+.contacts {
+    width: 300px;
+}
+
+.contacts h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 25px;
+}
+
+.map {
+    margin-bottom: 40px;
+}
+
+/* /////////////FOOTER///////////// */
+
+.main-footer-layout {
+    width: 100%;
+
+    background-color: #32425c;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 0;
+}
+
+.main-footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-footer-left p {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 55px;
+}
+
+.footer-logo {
+    margin-bottom: 33px;
+}
+
+.main-footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.site-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+
+    margin: 0;
+    padding: 0;
+
+    margin-top: 42px;
+    margin-bottom : 40px;
+}
+
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+
+    width: 525px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-footer-layout {
+    width: 100%;
+
+    background-color: #293449;
+}
+
+.bottom-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bottom-footer-left p {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-footer {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-items {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-footer-right {
+    display: flex;
+
+}
+
+/* СТИЛИ ДЛЯ СЕТКИ НЕСВЁРСТАННЫХ БЛОКОВ */
+
+.promo-blocks {
+    min-height:;
 }
