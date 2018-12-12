@@ -1,15 +1,27 @@
-/* font-family: 'Cuprum', sans-serif;
-font-family: 'PT Sans', sans-serif; */
-
 body {
     font-family: "Cuprum", "Arial", sans-serif;
+
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.top-header-layout {
+    background-color: #293449;
+}
+
 .top-header {
+    display: flex;
+    align-items: center;
+
     color: #ffffff;
 
     font-size: 17px;
@@ -18,12 +30,15 @@ a {
     background-color: #293449;
 }
 
-.top-header-right a{
-    color: #ffffff;
+.top-header-left {
+    display: flex;
+    align-items: center;
 }
 
-.order-button {
-    background-color: #63a63e;
+.search-form {
+    width: 270px;
+
+    margin-left: 17px;
 }
 
 .search-area {
@@ -46,11 +61,54 @@ a {
     background-color: #212a3a;
 }
 
+.search-area:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.top-header-right {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+.top-header-right a{
+    color: #ffffff;
+}
+
+.bookmarks {
+    width: 150px;
+
+    padding: 14px 25px 13px 44px;
+
+    box-sizing: border-box;
+}
+
+.cart {
+    width: 150px;
+
+    padding: 14px 26px 13px 49px;
+
+    box-sizing: border-box;
+}
+
 .bookmarks:active,
 .cart:active {
     color: rgba(255, 255, 255, 0.5);
 
     background-color: #161d29;
+}
+
+.order-button {
+    width: 150px;
+
+    padding: 14px 22px 13px 20px;
+
+    box-sizing: border-box;
+
+    background-color: #63a63e;
 }
 
 .order-button:hover {
@@ -63,17 +121,30 @@ a {
     background-color: #518534;
 }
 
-.search-area:focus {
-    color: #000000;
+.main-header-layout {
+    padding-bottom: 60px;
 
-    background-color: #ffffff;
+    background-color: #f4f7f9;
 }
 
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+
+    padding-top: 46px;
+    margin-bottom: 45px;
+
     background-color: #f4f7f9;
 }
 
 .main-title {
+    width: 200px;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 52px;
+
     color: #ee3643;
 
     font-size: 16px;
@@ -84,10 +155,25 @@ a {
 }
 
 .main-header-center {
+    width: 270px;
+
     text-align: center;
 }
 
-.tel-number {
+.main-header-center p {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 10px;
+}
+
+.main-header-center .tel-number {
+    width :270px;
+
+    padding: 12px 0;
+
+    text-align: center;
+
     color: #ee3643;
 
     font-size: 21px;
@@ -104,7 +190,63 @@ a {
 }
 
 .main-header-right ul {
+    display: flex;
+
     list-style: none;
+}
+
+.login-link {
+    width: 120px;
+
+    text-align: center;
+}
+
+.login-link .button {
+    width: 120px;
+
+    padding: 12px 27px 12px 15px;
+}
+
+.registration-link {
+    width: 150px;
+
+    text-align: center;
+
+    margin-left: 10px;
+}
+
+.registration-link .button {
+    width: 150px;
+
+    padding: 12px 25px;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    width: 300px;
+}
+
+.user-profile p {
+    margin: 0;
+}
+
+.user-profile-menu {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+
+    list-style: none;
+}
+
+.user-profile-menu a:first-child {
+    margin-left: 18px;
+    margin-right: 30px;
 }
 
 .main-header-right a {
@@ -131,6 +273,19 @@ a {
 
 .main-navigation ul {
     list-style: none;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+
+    margin: 0;
+    padding: 0;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .site-navigation-item a {
@@ -166,8 +321,6 @@ a {
     line-height: 24px;
 }
 
-    /*      Нужно ли здесь убирать маркеры? Не понимаю */
-
 .delivery-services {
     list-style: none;
 }
@@ -175,6 +328,35 @@ a {
 .delivery-services li {
     font-size: 18px;
     line-height: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    margin-bottom: 86px;
+}
+
+.about-left {
+    width: 540px;
+}
+
+.about-left h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 25px;
+}
+
+.about-left p {
+    margin: 0;
+    padding: 0;
+}
+
+.about-left p:first-of-type {
+    margin-bottom: 35px;
 }
 
 .about-left a {
@@ -196,7 +378,20 @@ a {
     background-color: #ba2732;
 }
 
+.delivery-services {
+    margin-bottom: 40px;
+}
+
+.contacts {
+    width: 300px;
+}
+
 .contacts h2 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 25px;
+
     font-size: 30px;
     font-weight: normal;
     line-height: 30px;
@@ -208,6 +403,10 @@ a {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
+}
+
+.map {
+    margin-bottom: 40px;
 }
 
 .contacts a {
@@ -228,21 +427,63 @@ a {
 .contacts a:active {
     background-color: #ba2732;
 }
-/* Footer */
+/* FOOTER////////////////////////////////////////////////////// */
 
-.main-footer {
+.main-footer-layout {
+    width: 100%;
+
     background-color: #32425c;
 }
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 0;
+
+    background-color: #32425c;
+}
+.main-footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    margin-bottom: 33px;
+}
+
 .main-footer-left p {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 55px;
+
     color: #f1f5f7;
 
     font-size: 18px;
     line-height: 24px;
 }
 
+.main-footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .main-footer-right ul {
     list-style: none;
+}
+
+.site-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+
+    margin: 0;
+    padding: 0;
+
+    margin-top: 42px;
+    margin-bottom : 40px;
 }
 
 .site-sections a {
@@ -260,6 +501,16 @@ a {
     color: rgba(241, 245, 247, 0.5);
 }
 
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+
+    width: 525px;
+
+    margin: 0;
+    padding: 0;
+}
+
 .product-categories a {
     color: #ffd180;
 
@@ -275,11 +526,27 @@ a {
     color: rgba(255, 209, 128, 0.5);
 }
 
+.bottom-footer-layout {
+    width: 100%;
+
+    background-color: #293449;
+}
+
 .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     background-color: #293449;
 }
 
 .bottom-footer-left p {
+    margin: 0;
+    padding: 0;
+
     color: #ffffff;
 
     font-size: 16px;
@@ -290,13 +557,31 @@ a {
     list-style: none;
 }
 
+.social-items {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+}
+
 .social-button {
     color: #ffffff;
 }
 
 .bottom-footer-right {
+    display: flex;
+
     font-size: 16px;
     line-height: 18px;
+}
+
+.bottom-footer-right p {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-footer-right p:first-child {
+    margin-right: 50px;
 }
 
 .bottom-footer-right span {
@@ -322,7 +607,7 @@ a {
 }
 
 
-/* Каталог */
+/* //  Каталог  //////////////////////////////////////////////// */
 
 .top-header-right .cart-full {
     background-color: #ee3643;
@@ -355,8 +640,16 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumbs {
+    display: flex;
+
+    padding: 24px 0 25px 0;
+}
+
 .breadcrumbs li {
     list-style: none;
+
+    margin-right: 39px;
 }
 
 .breadcrumbs a {
@@ -367,6 +660,10 @@ a {
     line-height: 18px;
 
     text-transform: uppercase;
+}
+
+.main-content h1 {
+    padding: 32px 0 34px 28px;
 }
 
 .catalog-section {
@@ -381,12 +678,22 @@ a {
     background-color: #f2f6f8;
 }
 
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
 .filter {
+    margin-right: 20px;
+
     font-family: "PT Sans", "Arial", sans-serif;
     text-transform: uppercase;
 }
 
 .filter h2 {
+    margin: 0 0 12px 0;
+    padding: 13px 0 15px 18px;
+
     font-size: 13px;
     font-weight: normal;
     line-height: 18px;
@@ -394,11 +701,20 @@ a {
     background-color: #f7f3ec;
 }
 
+.filter-form {
+    width: 220px;
+}
+
 .filter-form fieldset {
+    padding: 0;
+
     border: none;
 }
 
 .filter-form legend {
+    margin: 0;
+    padding: 0;
+
     font-size: 17px;
     font-weight: bold;
     line-height: 30px;
@@ -406,6 +722,29 @@ a {
 
 .filter-form ul {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.filter-by-price legend {
+    margin-bottom: 23px;
+}
+
+.filter-by-brand legend {
+    margin-bottom: 23px;
+}
+
+.filter-brands li{
+    margin-bottom: 29px;
+}
+
+.filter-by-power legend {
+    margin-bottom: 20px;
+}
+
+.filter-power li{
+    margin-bottom: 29px;
 }
 
 .filter-brands label,
@@ -418,6 +757,10 @@ a {
     color: rgba(0, 0, 0, 0.4);
 }
 
+.filter-by-power {
+    margin-bottom: 82px;
+}
+
 .filter-show-button {
     font-size: 13px;
     line-height: 18px;
@@ -428,7 +771,14 @@ a {
 }
 
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     list-style: none;
+
+    margin: 0;
+    padding: 0;
 
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: bold;
@@ -436,6 +786,10 @@ a {
 
 .catalog-item {
     position: relative;
+
+    width: 220px;
+
+    margin-bottom: 20px;
 
     border: 1px solid #e5e5e5;
 }
@@ -509,11 +863,15 @@ a {
 }
 
 .catalog-item p:first-of-type {
+    margin-bottom: 17px;
+
     font-size: 18px;
     line-height: 20px;
 }
 
 .catalog-item .sale {
+    margin-bottom: 14px;
+
     color: #999999;
 
     font-size: 17px;
@@ -523,291 +881,13 @@ a {
 }
 
 .actual-price {
+    margin-bottom: 21px;
+    padding: 9px 39px 13px 35px;
+
     color: #ffffff;
 
     font-size: 17px;
     line-height: 18px;
 
     background-color: #ee3643;
-}
-
-
-
-
-/* !!!!!!!!!!!!!!!!ЗДЕСЬ БУДУТ СТИЛИ СЕТКИ!!!!!!!!!!!!!!!!!!!! */
-
-
-body {
-    width: 1200px;
-
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 940px;
-    margin: 0 auto;
-}
-
-.top-header-layout {
-    width: 1200px;
-    height: 42px;
-
-    background-color: #293449;
-}
-
-.top-header {
-    display: flex;
-}
-
-/* НЕ ПОЛУЧАЕТСЯ ЗДЕСЬ ЭЛЕМЕНТЫ ВЕРХНЕЙ ШАПКИ ВЫРОВНЯТЬ ПО ЦЕНТРУ, В ЧЕМ ПРИЧИНА? */
-
-.top-header-left {
-    display: flex;
-    align-items: center;
-}
-
-.search-form {
-    width: 270px;
-}
-
-.top-header-right {
-    display: flex;
-    align-items: center;
-
-    margin-left: auto;
-}
-
-.bookmarks {
-    width: 140px;
-}
-
-.cart {
-    width: 140px;
-}
-
-.order-button {
-    width: 150px;
-}
-
-.main-header-layout {
-    padding-bottom: 60px;
-
-    background-color: #f4f7f9;
-}
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-
-    padding-top: 46px;
-    margin-bottom: 45px;
-}
-
-.main-title {
-    width: 200px;
-
-    margin: 0;
-    padding: 0;
-
-    margin-left: 52px;
-}
-
-.main-header-center p {
-    margin: 0;
-    padding: 0;
-
-    padding-top: 10px;
-}
-
-.main-header-center {
-    width: 270px;
-}
-
-.tel-number {
-    width :270px;
-
-    text-align: center;
-}
-
-.main-header-right ul{
-    display: flex;
-
-    margin: 0;
-    padding: 0;
-}
-
-.login-link {
-    width: 120px;
-
-    text-align: center;
-}
-
-.registration-link {
-    width: 150px;
-
-    text-align: center;
-
-    margin-left: 10px;
-}
-
-.site-navigation {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-
-
-    margin: 0;
-    padding: 0;
-
-    padding-top: 22px;
-    padding-bottom: 22px;
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 10px;
-
-    margin-bottom: 86px;
-}
-
-.about-left {
-    width: 540px;
-}
-
-.about-left h2 {
-    margin: 0;
-    padding: 0;
-
-    margin-bottom: 25px;
-}
-
-.about-left p {
-    margin: 0;
-    padding: 0;
-}
-
-.about-left p:first-of-type {
-    margin-bottom: 35px;
-}
-
-.delivery-services {
-    margin-bottom: 40px;
-}
-
-.contacts {
-    width: 300px;
-}
-
-.contacts h2 {
-    margin: 0;
-    padding: 0;
-
-    margin-bottom: 25px;
-}
-
-.map {
-    margin-bottom: 40px;
-}
-
-/* /////////////FOOTER///////////// */
-
-.main-footer-layout {
-    width: 100%;
-
-    background-color: #32425c;
-}
-
-.main-footer {
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 0;
-}
-
-.main-footer-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-footer-left p {
-    margin: 0;
-    padding: 0;
-
-    margin-bottom: 55px;
-}
-
-.footer-logo {
-    margin-bottom: 33px;
-}
-
-.main-footer-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.site-sections {
-    display: flex;
-    justify-content: space-between;
-    width: 550px;
-
-    margin: 0;
-    padding: 0;
-
-    margin-top: 42px;
-    margin-bottom : 40px;
-}
-
-.product-categories {
-    display: flex;
-    justify-content: space-between;
-
-    width: 525px;
-
-    margin: 0;
-    padding: 0;
-}
-
-.bottom-footer-layout {
-    width: 100%;
-
-    background-color: #293449;
-}
-
-.bottom-footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.bottom-footer-left p {
-    margin: 0;
-    padding: 0;
-}
-
-.bottom-footer {
-    display : flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-items {
-    display: flex;
-
-    margin: 0;
-    padding: 0;
-}
-
-.bottom-footer-right {
-    display: flex;
-
-}
-
-/* СТИЛИ ДЛЯ СЕТКИ НЕСВЁРСТАННЫХ БЛОКОВ */
-
-.promo-blocks {
-    min-height:;
 }
