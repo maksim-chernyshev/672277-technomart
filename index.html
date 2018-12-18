@@ -201,38 +201,42 @@
     </footer>
 
     <section class="modal modal-feedback">
-      <button class="modal-close">Закрыть</button>
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <form class="feedback" action="#" method="post">
-          <div class="user-contacts">
-            <p>
-                <label>
-                    <span>Ваше имя:</span>
-                    <input type="text" name="name" placeholder="Имя Фамилия">
-                </label>
-            </p>
-            <p>
-                <label>
-                    <span>Ваш e-mail:</span>
-                    <input type="text" name="email" placeholder="email@example.com">
-                </label>
-            </p>
-          </div>
-            <p>
-                <label>
-                    <span>Текст письма:</span>
-                    <textarea placeholder="В свободной форме"></textarea>
-                </label>
-            </p>
+        <button class="close-feedback">
+          <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+        </button>
+        <h2 aria-label="Напишите нам"></h2>
+        <div class="modal-container">
+            <form class="feedback" action="#" method="post">
+                <div class="user-contacts">
+                    <label class="feedback-name">
+                        <span>Ваше имя:</span>
+                        <input type="text" name="name" placeholder="Имя Фамилия">
+                    </label>
+                    <label class="feedback-email">
+                        <span>Ваш e-mail:</span>
+                        <input type="text" name="email" placeholder="email@example.com">
+                    </label>
+                </div>
+                <div class="message">
+                    <label class="message-text">
+                        <span>Текст письма:</span>
+                        <textarea placeholder="В свободной форме" rows="5"></textarea>
+                    </label>
+                </div>
+        </div>
             <div class="feedback-bottom">
-                <button class="button" type="submit">Отправить</button>
+                <div class="modal-container">
+                    <button class="submit-button" type="submit">Отправить</button>
+                </div>
             </div>
         </form>
     </section>
 
     <section class="modal modal-map">
-      <button class="modal-close">Закрыть</button>
-        <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button class="modal-close close-map" aria-label="Закрыть">
+          <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+      </button>
+        <h2 aria-label="Как до нас добраться"></h2>
         <img src="img/map-full.png" width="940" height="446" alt="Офис компании по адресу улица Большая Конюшенная дом 19/8, Санкт-Петербург">
     </section>
 
