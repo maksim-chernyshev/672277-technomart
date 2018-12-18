@@ -771,13 +771,132 @@ a {
     color: #ee3643;
 }
 
-/* Модальные окна, которые на этом этапе стилизовать не нужно */
+/* //  Модальные окна  /////////////////////////////////////////////// */
 
 .modal {
-    display: none;
+    display: block;
 }
 
+.modal-map img {
+    box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5);
+}
 
+.modal-map {
+    width: 940px;
+    height: 446px;
+
+    position: relative;
+}
+
+.close-map {
+    position: absolute;
+
+    top: 9px;
+    right: 9px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.modal-container {
+    width: 460px;
+    margin: 0 auto;
+}
+
+.modal-feedback {
+    position: relative;
+
+    width: 620px;
+    height: 430px;
+
+    box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
+                inset 0 5px 0 0 #ff5357;
+}
+
+.close-feedback {
+    position: absolute;
+
+    top: 16px;
+    right: 9px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.modal-feedback h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.feedback .user-contacts {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 56px;
+    margin-bottom: 19px;
+}
+
+.user-contacts label {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-name input {
+    padding: 10px 16px;
+
+    width: 220px;
+
+    box-sizing: border-box;
+}
+
+.feedback-name span {
+    margin-bottom: 9px;
+}
+
+.feedback-email input {
+    padding: 10px 16px;
+
+    width: 220px;
+
+    box-sizing: border-box;
+}
+
+.feedback-email span {
+    margin-bottom: 9px;
+}
+
+.message label {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-text span {
+    margin-bottom: 9px;
+}
+
+.message-text textarea {
+    padding: 10px 16px;
+    margin-bottom: 31px;
+}
+
+.feedback-bottom {
+    min-height: 112px;
+
+    background-color: #f4f4f4;
+}
+
+.submit-button {
+    width: 100%;
+
+    margin: 37px 0;
+    padding: 12px 0;
+
+    color: #ffffff;
+
+    background-color: #ee3643;
+
+    border-radius: 5px;
+}
 /* //  Каталог  //////////////////////////////////////////////// */
 
 .top-header-right .cart-full {
