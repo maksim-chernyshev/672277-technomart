@@ -18,10 +18,9 @@
                         <img src="img/header-logo.png" width="220" height="47" alt="Логотип «Техномарт»" title="Техномарт">
                     </a>
                     <form class="search-form" action="#" method="get">
-                        <label class="search-area" for="search"></label>
-                        <input class="search-area" type="search" id="search" name="search" placeholder="Поиск:">
+                        <label class="search-area-label" for="search" aria-label="Поиск на сайте"></label>
+                        <input class="search-area-field" type="search" id="search" name="search" placeholder="Поиск:">
                   </form>
-
                 </div>
                 <div class="top-header-right">
                     <a class="bookmarks" href="#">Закладки: 0</a>
@@ -37,29 +36,36 @@
                         <p class="main-title">
                             Интернет-магазин
                             строительных материалов
-                            и инструментов для ремонта
+                            и&nbsp;инструментов для ремонта
                         </p>
                     </div>
                     <div class="main-header-center">
                         <p class="tel-number">+7 (812) 555-05-55</p>
                         <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     </div>
-                <div class="main-header-right">
-                    <div class="user-profile">
-                        <p>
-                            <a href="#">Равшан Джамшутович</a>
-                        </p>
-                        <a class="exit-profile" href="#">Выход</a>
+                    <div class="main-header-right">
+                        <div class="user-profile">
+                                <a class="user-name"href="#">Равшан Джамшутович</a>
+                                <a class="exit-profile" href="#" aria-label="Выйти из профиля">
+                                    <svg class="icon-logout" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    	 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+                                    <g>
+                                    	<polygon fill="#32425c" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
+                                    	<path fill="#32425c" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
+                                    		v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                                    </g>
+                                    </svg>
+                                </a>
+                        </div>
+                        <ul class="user-profile-menu">
+                            <li><a class="my-orders" href="#">Мои заказы</a></li>
+                            <li><a class="profile" href="#">Личный кабинет</a></li>
+                        </ul>
                     </div>
-                    <ul class="user-profile-menu">
-                        <li><a href="#">Мои заказы</a></li>
-                        <li><a href="#">Личный кабинет</a></li>
-                    </ul>
-                </div>
             </div>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li class="site-navigation-item"><a href="#">Главная</a></li>
+                    <li class="site-navigation-item"><a href="index.html">Главная</a></li>
                     <li class="site-navigation-item"><a href="#">Компания</a></li>
                     <li class="site-navigation-item"><a href="#">Каталог</a></li>
                     <li class="site-navigation-item"><a href="#">Новости</a></li>
@@ -74,10 +80,25 @@
 
     <main class="main-content container">
         <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
+            <li>
+                <a href="index.html" aria-label="На главную страницу">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 width="15px" height="12px" viewBox="0 0 15 12" enable-background="new 0 0 15 12" xml:space="preserve">
+                    <g>
+                    	<polygon fill="#C1C6CE" points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516 	"/>
+                    	<path fill="#C1C6CE" d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
+                    		c-0.026-0.018-0.052-0.035-0.08-0.047C8.156,0.539,8.125,0.533,8.093,0.527C8.062,0.521,8.032,0.515,8,0.515
+                    		c-0.031,0-0.061,0.006-0.092,0.012C7.875,0.533,7.845,0.539,7.813,0.552C7.785,0.563,7.76,0.581,7.733,0.598
+                    		c-0.021,0.014-0.045,0.02-0.064,0.037l-6.498,5.73C0.964,6.548,0.944,6.864,1.126,7.071C1.225,7.183,1.363,7.24,1.501,7.24
+                    		c0.118,0,0.236-0.041,0.331-0.125L8,1.677l6.169,5.438C14.265,7.199,14.383,7.24,14.5,7.24c0.139,0,0.276-0.058,0.375-0.169
+                    		C15.058,6.864,15.038,6.548,14.831,6.365z"/>
+                    </g>
+                    </svg>
+                </a>
+            </li>
             <li><a href="#">Каталог</a></li>
-            <li><a href="#">Инструменты</a></li>
-            <li><a>Перфораторы</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
         <h1 class="catalog-section">Перфораторы</h1>
         <div class="catalog-columns">
@@ -89,25 +110,25 @@
                     <!--      Фильтр по цене пока не нужен              -->
                 </fieldset>
                 <fieldset class="filter-by-brand">
-                    <legend>Производители</legend>
+                    <legend>Производители:</legend>
                         <ul class="filter-brands">
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
                                 <label for="Bosch">Bosch</label>
                             </li>
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interskol" id="interskol">
                                 <label for="interskol">Интерскол</label>
                             </li>
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="makita" checked>
                                 <label for="makita">Makita</label>
                             </li>
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="dewalt" disabled>
                                 <label for="dewalt">Dewalt</label>
                             </li>
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="hitachi">
                                 <label for="hitachi">Hitachi</label>
                             </li>
@@ -116,11 +137,11 @@
                     <fieldset class="filter-by-power">
                         <legend>Питание</legend>
                         <ul class="filter-power">
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="battery" id="battery" checked>
                                 <label for="battery">Аккумуляторные</label>
                             </li>
-                            <li>
+                            <li class="filter-option">
                                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="socket" id="socket">
                                 <label for="socket">Сетевые</label>
                             </li>
