@@ -2491,7 +2491,9 @@ input[type="radio"].visually-hidden {
 
     background-color: #ee3643;
 
-    border-radius: 5px;
+    border: none;
+
+    border-radius: 3px;
 }
 
 .modal-cart {
