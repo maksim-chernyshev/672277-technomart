@@ -1078,6 +1078,14 @@ input[type="radio"].visually-hidden {
     border-radius: 3px;
 }
 
+.credit-preview .credit-button:hover {
+    background-color: #ca2c37;
+}
+
+.credit-preview .credit-button:active {
+    background-color: #ba2732;
+}
+
 .service-menu-item {
     padding-top: 14px;
     padding-right: 0;
@@ -2010,6 +2018,10 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px dotted #ee3643;
 }
 
+.catalog-sorting a {
+    color: inherit;
+}
+
 .catalog-sorting .sort-by-price {
     margin-right: 71px;
 }
@@ -2061,6 +2073,10 @@ input[type="radio"].visually-hidden {
 .sort-up polygon,
 .sort-down polyline {
     fill: rgba(0, 0, 0, 0.3);
+}
+
+.sort-direction-current polygon {
+    fill: #ee3643;
 }
 
 .sort-up polygon:hover,
