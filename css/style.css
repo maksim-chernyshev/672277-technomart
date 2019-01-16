@@ -1,5 +1,5 @@
 body {
-    font-family: "Cuprum", "Arial", sans-serif;
+    font-family: "Cuprum", Arial, sans-serif;
 
     margin: 0;
     padding: 0;
@@ -1186,7 +1186,7 @@ input[type="radio"].visually-hidden {
 
     margin-bottom: 24px;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -1245,7 +1245,7 @@ input[type="radio"].visually-hidden {
 
     margin-bottom: 31px;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -1640,7 +1640,7 @@ input[type="radio"].visually-hidden {
 
     color: #000000;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 18px;
 
@@ -1672,7 +1672,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
 }
 
@@ -2082,13 +2082,13 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 42px;
     margin-left: 20px;
     padding: 0;
 
     list-style: none;
 
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -2284,18 +2284,18 @@ input[type="radio"].visually-hidden {
     display: flex;
 
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     margin-left: 20px;
     padding: 0;
 
     list-style: none;
 }
 
-.pagination-item {
+.pagination-item a {
     margin-right: 10px;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-right: 14px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-left: 15px;
 
     font-family: "PT Sans", Arial, sans-serif;
@@ -2310,14 +2310,18 @@ input[type="radio"].visually-hidden {
     border-radius: 3px;
 }
 
-.pagination-item:last-child {
+.pagination-item-next a {
     padding-top: 9px;
     padding-right: 30px;
-    padding-bottom: 1px;
+    padding-bottom: 10px;
     padding-left: 31px;
 }
 
-.pagination-item-current {
+.pagination-item a:active {
+    border-color: #ee3643;
+}
+
+.pagination-item-current a {
     color: #ffffff;
 
     border: 1px solid #ee3643;
@@ -2366,11 +2370,14 @@ input[type="radio"].visually-hidden {
 
 .modal-map {
     display: none;
+
     width: 940px;
     height: 446px;
 
+    margin-left: -470px;
+
     top: 150px;
-    left: 250px;
+    left: 50%;
 }
 
 .modal-map img {
@@ -2399,8 +2406,10 @@ input[type="radio"].visually-hidden {
     width: 620px;
     height: 430px;
 
+    margin-left: -310px;
+
     top: 150px;
-    left: 410px;
+    left: 50%;
 
     box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
                 inset 0 5px 0 0 #ff5357;
@@ -2502,8 +2511,10 @@ input[type="radio"].visually-hidden {
     width: 620px;
     height: 284px;
 
+    margin-left: -310px;
+
     top: 200px;
-    left: 410px;
+    left: 50%;
 
     box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
                 inset 0 5px 0 0 #ff5357;
