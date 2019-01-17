@@ -70,12 +70,14 @@ input[type="radio"].visually-hidden {
 
     background-color: #ee3643;
     -webkit-box-shadow: 0 5px 0 0 #b52933;
+        -ms-box-shadow: 0 5px 0 0 #b52933;
             box-shadow: 0 5px 0 0 #b52933;
 }
 
 .inner-page-logo:hover {
     background-color: #ca2c37;
     -webkit-box-shadow: 0 5px 0 0 #9a212a;
+        -ms-box-shadow: 0 5px 0 0 #9a212a;
             box-shadow: 0 5px 0 0 #9a212a;
 
 }
@@ -83,6 +85,7 @@ input[type="radio"].visually-hidden {
 .inner-page-logo:active {
     background-color: #ba2732;
     -webkit-box-shadow: 0 5px 0 0 #8e1e26;
+        -ms-box-shadow: 0 5px 0 0 #8e1e26;
             box-shadow: 0 5px 0 0 #8e1e26;
 }
 
@@ -113,6 +116,8 @@ input[type="radio"].visually-hidden {
     width: 100%;
     border: none;
 
+    color: #ffffff;
+
     background-color: #293449;
 }
 
@@ -120,7 +125,13 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
-.search-area-field::-moz-input-placeholder {
+.search-area-field::-moz-placeholder {
+    color: #ffffff;
+
+    opacity: 1;
+}
+
+.search-area-field::-ms-input-placeholder {
     color: #ffffff;
 }
 
@@ -155,7 +166,7 @@ input[type="radio"].visually-hidden {
 .bookmarks {
     position: relative;
 
-    width: 150px;
+    min-width: 150px;
 
     padding: 12px 25px 13px 44px;
 
@@ -184,7 +195,7 @@ input[type="radio"].visually-hidden {
 .cart {
     position: relative;
 
-    width: 150px;
+    min-width: 150px;
 
     padding: 12px 26px 13px 49px;
 
@@ -229,7 +240,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-button {
-    width: 150px;
+    min-width: 150px;
 
     padding: 12px 22px 13px 20px;
 
@@ -309,6 +320,8 @@ input[type="radio"].visually-hidden {
 
     min-width: 270px;
 
+    margin: 0;
+    padding: 0;
     padding-top: 10px;
     padding-left: 18px;
     padding-bottom: 10px;
@@ -416,7 +429,7 @@ input[type="radio"].visually-hidden {
 .registration-link .button {
     display: inline-block;
 
-    width: 150px;
+    min-width: 150px;
 
     padding-top: 12px;
     padding-right: 25px;
@@ -2130,6 +2143,10 @@ input[type="radio"].visually-hidden {
     border-radius: 4px;
 }
 
+.catalog {
+    min-width: 720px;
+}
+
 .catalog-sorting {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2247,6 +2264,10 @@ input[type="radio"].visually-hidden {
 
 .sort-up polygon:active,
 .sort-down polyline:active {
+    fill: #ee3643;
+}
+
+.sort-direction-current polygon:hover {
     fill: #ee3643;
 }
 
@@ -2370,10 +2391,14 @@ input[type="radio"].visually-hidden {
 }
 
 .chosen-product .buy-button:hover {
+    border: 3px solid #5fbb2d;
+    border-bottom-color: #367315;
+
     background-color: #5fbb2d;
 }
 
 .chosen-product .buy-button:active {
+    border: 3px solid #518534;
     background-color: #518534;
 }
 
