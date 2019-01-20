@@ -395,6 +395,8 @@ input[type="radio"].visually-hidden {
 .login-link .button {
     display: inline-block;
 
+    vertical-align: center;
+
     position: relative;
 
     padding: 12px;
@@ -438,6 +440,8 @@ input[type="radio"].visually-hidden {
 
 .registration-link .button {
     display: inline-block;
+
+    vertical-align: center;
 
     min-width: 150px;
 
@@ -496,6 +500,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-item a {
     display: inline-block;
+
+    vertical-align: center;
 
     padding: 19px 33px;
 
@@ -618,6 +624,8 @@ input[type="radio"].visually-hidden {
 
 .promo-container-right {
     display: inline-block;
+
+    vertical-align: center;
 }
 
 .promo-item-1 {
@@ -965,6 +973,14 @@ input[type="radio"].visually-hidden {
             border-radius: 3px;
 }
 
+.headline-layout a:hover {
+    background-color: #ca2c37;
+}
+
+.headline-layout a:active {
+    background-color: #ba2732;
+}
+
 .promo-catalog-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1018,6 +1034,14 @@ input[type="radio"].visually-hidden {
     padding-top: 11px;
     padding-bottom: 9px;
     padding-right: 68px;
+}
+
+.headline-layout-brands a:hover {
+    background-color: #ca2c37;
+}
+
+.headline-layout-brands a:active {
+    background-color: #ba2732;
 }
 
 .brand-list {
@@ -1329,11 +1353,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 97px;
 }
 
-.about-left {
+.about-shop {
     width: 540px;
 }
 
-.about-left h2 {
+.about-shop h2 {
     margin: 0;
     padding: 0;
 
@@ -1346,7 +1370,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-.about-left p {
+.about-shop p {
     margin: 0;
     padding: 0;
 
@@ -1357,11 +1381,11 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
 }
 
-.about-left p:last-of-type {
+.about-shop p:last-of-type {
     margin-bottom: 21px;
 }
 
-.about-left a {
+.about-shop a {
     padding: 11px 40px 11px 40px;
 
     color: #ffffff;
@@ -1378,11 +1402,11 @@ input[type="radio"].visually-hidden {
             border-radius: 3px;
 }
 
-.about-left a:hover {
+.about-shop a:hover {
     background-color: #ca2c37;
 }
 
-.about-left a:active {
+.about-shop a:active {
     background-color: #ba2732;
 }
 
@@ -1738,6 +1762,8 @@ input[type="radio"].visually-hidden {
 
     display: inline-block;
 
+    vertical-align: center;
+
     padding-top: 12px;
     padding-right: 6px;
     padding-bottom: 12px;
@@ -1767,6 +1793,8 @@ input[type="radio"].visually-hidden {
 
 .exit-profile {
     display: inline-block;
+
+    vertical-align: center;
 
     position: relative;
 }
@@ -1889,6 +1917,8 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs a {
     display: inline-block;
+
+    vertical-align: center;
 
     color: #000000;
 
@@ -2691,8 +2721,9 @@ input[type="radio"].visually-hidden {
     height: 446px;
 
     margin-left: -470px;
+    margin-top: -223px;
 
-    top: 150px;
+    top: 50%;
     left: 50%;
 }
 
@@ -2724,8 +2755,9 @@ input[type="radio"].visually-hidden {
     height: 430px;
 
     margin-left: -310px;
+    margin-top: -215px;
 
-    top: 150px;
+    top: 50%;
     left: 50%;
 
     -webkit-box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
@@ -2858,8 +2890,9 @@ input[type="radio"].visually-hidden {
     height: 284px;
 
     margin-left: -310px;
+    margin-top: -142px;
 
-    top: 200px;
+    top: 50%;
     left: 50%;
 
     -webkit-box-shadow: 0 0 20px 0 rgba(47, 42, 43, 0.5),
