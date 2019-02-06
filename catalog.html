@@ -7,29 +7,25 @@
     <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="top-header-layout">
             <div class="top-header container">
-                <div class="top-header-left">
-                    <a class="header-logo inner-page-logo" href="index.html">
-                        <img src="img/header-logo.png" width="110" height="18" alt="Логотип «Техномарт»" title="Техномарт" aria-label="Вернуться на главную страницу">
-                    </a>
-                    <form class="search-form" action="#" method="get">
-                        <label class="search-area-label" for="search" aria-label="Поиск на сайте">
-                            <svg class="search-icon" enable-background="new 0 0 17 17" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m17 15.586-3.542-3.542c.963-1.262 1.542-2.834 1.542-4.544 0-4.142-3.357-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.143 3.358 7.5 7.5 7.5 1.71 0 3.282-.579 4.544-1.542l3.542 3.542zm-15-8.086c0-3.033 2.467-5.5 5.5-5.5 3.032 0 5.5 2.467 5.5 5.5 0 3.032-2.468 5.5-5.5 5.5-3.033 0-5.5-2.468-5.5-5.5z" fill="#ffffff"/></svg>
-                        </label>
-                        <input class="search-area-field" type="search" id="search" name="search" placeholder="Поиск:">
-                    </form>
-                </div>
-                <div class="top-header-right">
-                    <a class="bookmarks" href="#">Закладки: 0</a>
-                    <a class="cart cart-full" href="#">Корзина: 10</a>
-                    <a class="order-button" href="#">Оформить заказ</a>
-                </div>
+                <a class="header-logo inner-page-logo" href="index.html">
+                    <img src="img/header-logo.png" width="110" height="18" alt="Логотип «Техномарт»" title="Техномарт" aria-label="Вернуться на главную страницу">
+                </a>
+                <form class="search-form" action="#" method="get">
+                    <input class="search-area-field" type="search" id="search" name="search" placeholder="Поиск:">
+                    <label class="search-area-label" for="search" aria-label="Поиск на сайте">
+                        <svg class="search-icon" enable-background="new 0 0 17 17" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="m17 15.586-3.542-3.542c.963-1.262 1.542-2.834 1.542-4.544 0-4.142-3.357-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.143 3.358 7.5 7.5 7.5 1.71 0 3.282-.579 4.544-1.542l3.542 3.542zm-15-8.086c0-3.033 2.467-5.5 5.5-5.5 3.032 0 5.5 2.467 5.5 5.5 0 3.032-2.468 5.5-5.5 5.5-3.033 0-5.5-2.468-5.5-5.5z"/></svg>
+                    </label>
+                </form>
+                <a class="bookmarks" href="#">Закладки: 0</a>
+                <a class="cart cart-full" href="#">Корзина: 10</a>
+                <a class="order-button" href="#">Оформить заказ</a>
             </div>
         </div>
         <div class="main-header-layout">
@@ -202,7 +198,6 @@
                     </div>
                     <ul class="catalog-list">
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <p class="title">Перфоратор BOSCH BFG 3000</p>
                             <p class="sale">22500 Р.</p>
@@ -213,7 +208,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <p class="title">Перфоратор BOSCH BFG 6000</p>
                             <p class="sale">30500 Р.</p>
@@ -223,8 +217,7 @@
                                 <a class="bookmark-button" href="#">В закладки</a>
                             </div>
                         </li>
-                        <li class="catalog-item">
-                            <div class="flag flag-new">Новинка</div>
+                        <li class="catalog-item flag-new">
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <p class="title">Перфоратор BOSCH BFG 2000</p>
                             <p class="sale sale-hidden"></p>
@@ -235,7 +228,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <p class="title">Перфоратор BOSCH BFG 3000</p>
                             <p class="sale">22500 Р.</p>
@@ -245,8 +237,7 @@
                                 <a class="bookmark-button" href="#">В закладки</a>
                             </div>
                         </li>
-                        <li class="catalog-item">
-                            <div class="flag flag-new">Новинка</div>
+                        <li class="catalog-item flag-new">
                             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <p class="title">Перфоратор BOSCH BFG 6000</p>
                             <p class="sale">30500 Р.</p>
@@ -257,7 +248,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <p class="title">Перфоратор BOSCH BFG 2000</p>
                             <p class="sale sale-hidden"></p>
@@ -267,8 +257,7 @@
                                 <a class="bookmark-button" href="#">В закладки</a>
                             </div>
                         </li>
-                        <li class="catalog-item">
-                            <div class="flag flag-new">Новинка</div>
+                        <li class="catalog-item flag-new">
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                             <p class="title">Перфоратор BOSCH BFG 3000</p>
                             <p class="sale">22500 Р.</p>
@@ -279,7 +268,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                             <p class="title">Перфоратор BOSCH BFG 6000</p>
                             <p class="sale">30500 Р.</p>
@@ -290,7 +278,6 @@
                             </div>
                         </li>
                         <li class="catalog-item">
-                            <div class="flag flag-new visually-hidden">Новинка</div>
                             <img src="img/bfg-2000-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                             <p class="title">Перфоратор BOSCH BFG 2000</p>
                             <p class="sale sale-hidden"></p>
@@ -358,8 +345,8 @@
                 </div>
                 <div class="bottom-footer-center">
                     <ul class="social-items">
-                        <li class="social-button" aria-label="Техномарт Вконтакте">
-                            <a class="social-vk" href="#">
+                        <li class="social-button">
+                            <a class="social-vk" aria-label="Техномарт Вконтакте" href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="26px" height="15px" viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
                                      <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
@@ -375,16 +362,16 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-button" aria-label="Техномарт в Фейсбук">
-                            <a class="social-fb" href="#">
+                        <li class="social-button">
+                            <a class="social-fb" aria-label="Техномарт в Фейсбук" href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                                      <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
                                 </svg>
                             </a>
                         </li>
-                        <li class="social-button" aria-label="Техномарт в Инстаграм">
-                            <a class="social-ig" href="#">
+                        <li class="social-button">
+                            <a class="social-ig" aria-label="Техномарт в Инстаграм" href="#">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
                                      <path fill="#FFFFFF" d="M18,0H3C1.35,0,0,1.35,0,3v15c0,1.65,1.35,3,3,3h15c1.65,0,3-1.35,3-3V3C21,1.35,19.65,0,18,0z M10.5,7
